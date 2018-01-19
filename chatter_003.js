@@ -45,7 +45,7 @@ function chatSend(realMessage) {
       msgId = parseInt(this.responseText);
 
       if (!realMessage) { // alleen de checker aanzetten als het aan het begin is
-        chatChecker = setInterval(chatRead, 1000); // haal berichten op
+        chatChecker = setInterval(chatRead, 1500); // haal berichten op
       }
       else {
         //alert("Bericht "+msgId+" is verzonden");
@@ -137,8 +137,6 @@ function verwerkChats(rawString) {
   }
   return verwerkteMsgId;
 }
-// vraag de volgende 3 berichten op (waarschijnlijk zijn er intussen al andere berichten door anderen ingetypt,
-// daarom voor de zekerheid 3 volgende berichten)
 
 function initChat() {
   clearInterval(chatChecker);
