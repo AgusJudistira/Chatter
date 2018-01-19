@@ -1,3 +1,8 @@
+/* Beschrijving: Een chatprogramma waarmee je met elkaar kunt chatten.
+Gebruikt de Code Gorilla API die op https://www.codegorilla.nl/read_write/api.php staat.
+Je kunt echt met (een paar) anderen chatten zolang je maar dezelfde mykey gebruikt.
+'mykey' wordt vertaald als 'de chatroom' voor de gebruiker van dit programma */
+​
 function buildParameters(modus, chatKanaal, msgId, inputString) {
 
   var parameters = "";
