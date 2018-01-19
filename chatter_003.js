@@ -66,13 +66,13 @@ function chatRead() {
   var chatKanaal = document.getElementById("chatKanaal").value;
 
   var requestParameters = buildParameters("list", chatKanaal);
-  console.log("requestParameters in chatRead: "+requestParameters);
+  //console.log("requestParameters in chatRead: "+requestParameters);
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
 
     if (this.readyState == 4 && this.status == 200) {
-      console.log("opgehaalde bericht: "+this.responseText+"   mykey: "+chatKanaal);
+      //console.log("opgehaalde bericht: "+this.responseText+"   mykey: "+chatKanaal);
       if (this.responseText.length > 0) { // haal alleen de laatste berichten op
         chatIds = verwerkChats(this.responseText);
         //alert("chatIds.length: "+chatIds.length);
@@ -95,7 +95,7 @@ function chatRead() {
       }
     }
   };
-  console.log("https://www.codegorilla.nl/read_write/api.php?"+requestParameters);
+  //console.log("https://www.codegorilla.nl/read_write/api.php?"+requestParameters);
   xhttp.open("GET", "https://www.codegorilla.nl/read_write/api.php?"+requestParameters, true);
   xhttp.send();
 }
