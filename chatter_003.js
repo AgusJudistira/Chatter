@@ -129,6 +129,7 @@ function getOneMessage(reqMsgId) {
     xhttp.send();
 }
 
+// splits de teruggekregen string array van id's op en berg ze als getallen op in een array
 function verwerkChats(rawString) {
   var strArray = rawString.split(",");
   var verwerkteMsgId = new Array();
