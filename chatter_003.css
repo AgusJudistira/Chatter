@@ -15,7 +15,10 @@ body {
   /* border: 2px solid white;*/
   margin-bottom: 0px;
   padding-bottom: 0px;
-  margin-left: 12px;
+}
+
+#chatScreen > p {
+  margin-left: 1.5vw;
 }
 
 #chatInput {
